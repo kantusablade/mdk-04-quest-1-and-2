@@ -45,9 +45,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        Phone phone1 = new Phone("Model 1", 0.5, "111");
-        Phone phone2 = new Phone("Model 2", 0.7, "222");
-        Phone phone3 = new Phone("Model 3", 0.9, "333");
+        Phone phone1 = new Phone("Model 1", 0.5, "228");
+        Phone phone2 = new Phone("Model 2", 0.7, "666");
+        Phone phone3 = new Phone("Model 3", 0.9, "880053535");
 
         phone1.receiveCall("yara");
         Console.WriteLine("Number: " + phone1.getNumber());
