@@ -13,7 +13,7 @@ class Phone
         this.phoneNumber = phoneNumber;
     }
 
-    public Phone() : this("Unknown", 0.0, "Unknown") { }
+    public Phone() : this("Unknownно", 0.0, "Unknown") { }
 
     public void receiveCall(string name)
     {
@@ -32,7 +32,7 @@ class Phone
 
     public void SendMessage(params string[] numbers)
     {
-        Console.Write("Сообщение отправлено на номера: ");
+        Console.Write("Сообщение отправлено на номер: ");
         foreach (string number in numbers)
         {
             Console.Write(number + " ");
