@@ -1,5 +1,5 @@
 using System;
-
+using UnityEngine; 
 class Phone
 {
     private string numberModel;
@@ -13,7 +13,7 @@ class Phone
         this.phoneNumber = phoneNumber;
     }
 
-    public Phone() : this("Unknownно", 0.0, "Unknown") { }
+    public Phone() : this("Ноунейм", 0.0, "Unknown") { }
 
     public void receiveCall(string name)
     {
