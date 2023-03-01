@@ -1,0 +1,35 @@
+interface Instrument {
+    string KEY = "До мажор";
+    void play();
+}
+
+class Басгитара : Instrument {
+    int stringsCount;
+    public void play() {
+        Console.WriteLine("Playing Басгитара with " + stringsCount + " strings in key " + KEY);
+    }
+}
+
+class Барабан : Instrument {
+    int size;
+    public void play() {
+        Console.WriteLine("Playing Барабан with size " + size + " in key " + KEY);
+    }
+}
+
+class Труба : Instrument {
+    int diameter;
+    public void play() {
+        Console.WriteLine("Playing Труба with diameter " + diameter + " in key " + KEY);
+    }
+}
+
+class Program {
+    static void Main(string[] args) {
+        Instrument[] instruments = {new Гитара {stringsCount = 6}, new Барабан {size = 22}, new Труба {diameter = 12}};
+
+        foreach (var instrument in instruments) {
+            instrument.play();
+        }
+    }
+}
